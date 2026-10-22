@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Explore Menu | NutriCheck</title>
 </head>
 <body>
     <header>
@@ -17,6 +17,183 @@
         </ul>
     </nav>
 </header>
+<section class="menu-hero">
+            <div class="container">
+
+                <p class="eyebrow">DISCOVER YOUR NEXT MEAL</p>
+
+                <h1>
+                    Explore Our <span>Menu</span>
+                </h1>
+
+                <p>
+                    Browse meals, check ingredients, and explore available
+                    nutritional information before making your choice.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- Menu Search  -->
+        <section id="menu-items" >
+            <div class="container">
+
+                <div class="menu-intro">
+
+                    <div>
+                        <h2>Find Your Meal</h2>
+
+                        <p>
+                            Search for a dish or filter the menu according
+                            to your dietary requirements.
+                        </p>
+                    </div>
+
+                    <div class="cart-summary">
+                        <span aria-hidden="true">🛒</span>
+
+                        <span>
+                            Cart:
+                            <strong id="cart-count">0</strong>
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <!-- Search Form -->
+                <form id="menu-search-form" class="search-form" role="search">
+
+                    <label for="menu-search" class="visually-hidden">
+                        Search menu items
+                    </label>
+
+                    <input
+                        type="search"
+                        id="menu-search"
+                        name="search"
+                        placeholder="Search meals or ingredients..."
+                    >
+
+                    <button type="submit" class="btn btn-primary">
+                        Search
+                    </button>
+
+                </form>
+
+
+                <!-- Dietary -->
+                <div class="filter-panel">
+
+                    <div class="filter-group">
+
+                        <label for="diet-filter">
+                            Dietary concern
+                        </label>
+
+                        <select id="diet-filter" name="diet">
+                            <option value="all">All menu items</option>
+                            <option value="gluten">Gluten awareness</option>
+                            <option value="allergens">Food allergens</option>
+                            <option value="diabetes">Diabetes awareness</option>
+                            <option value="kidney">Kidney health</option>
+                        </select>
+
+                    </div>
+
+
+                    <div class="filter-group">
+
+                        <label for="category-filter">
+                            Food category
+                        </label>
+
+                        <select id="category-filter" name="category">
+                            <option value="all">All categories</option>
+                            <option value="main">Main course</option>
+                            <option value="salad">Salads</option>
+                            <option value="vegetarian">Vegetarian</option>
+                            <option value="drinks">Drinks</option>
+                        </select>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        id="clear-filters"
+                        class="btn btn-secondary"
+                    >
+                        Clear Filters
+                    </button>
+
+                </div>
+
+
+                <!-- Menu Items -->
+                <div id="menu-grid" class="menu-grid">
+
+                    <!-- Menu cards will be rendered here by menu.js. -->
+
+                </div>
+
+
+                <!-- Empty State -->
+                <div id="empty-state" class="empty-state" hidden>
+
+                    <h3>No matching meals found</h3>
+
+                    <p>
+                        Try another search term or clear your filters
+                        to explore more menu items.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="dietary-notice-section">
+            <div class="container dietary-notice">
+
+                <div>
+                    <h2>Have Specific Dietary Requirements?</h2>
+
+                    <p>
+                        Review the available ingredients, allergen
+                        declarations, and nutritional information.
+                        If anything is unclear, contact the restaurant
+                        before ordering.
+                    </p>
+                
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+
+            <a href="index.html" class="logo footer-logo">
+                Nutri<span>Check</span>
+            </a>
+
+            <p>
+                Helping you make more informed food choices.
+            </p>
+
+            <p class="copyright">
+                &copy; 2026 NutriCheck. All rights reserved.
+            </p>
+
+        </div>
+    </footer>
+
+</body>
+</html>
+
     
 </body>
 </html>
