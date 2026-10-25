@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: nutricheck-api
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm run api
+    healthCheckPath: /meals
+    disk:
+      name: nutricheck-data
+      mountPath: /var/data
+      sizeGB: 1

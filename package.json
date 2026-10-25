@@ -1,0 +1,14 @@
+{
+  "name": "nutricheck",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "api": "node scripts/start-api.js",
+    "test": "node --test --experimental-test-coverage"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}

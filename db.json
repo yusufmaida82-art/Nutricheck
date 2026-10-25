@@ -1,0 +1,34 @@
+{
+  "meals": [
+    {
+      "id": "1",
+      "name": "Maple Roasted Salmon",
+      "category": "main",
+      "dietary": "gluten",
+      "ingredients": "Salmon, maple glaze, rice, seasonal vegetables",
+      "description": "Oven-roasted salmon with a light maple glaze.",
+      "price": 18,
+      "available": true
+    },
+    {
+      "id": "2",
+      "name": "Garden Harvest Salad",
+      "category": "salad",
+      "dietary": "vegetarian",
+      "ingredients": "Mixed greens, apple, walnuts, goat cheese",
+      "description": "Fresh greens with crisp apple and toasted walnuts.",
+      "price": 12,
+      "available": true
+    },
+    {
+      "id": "3",
+      "name": "Roasted Vegetable Bowl",
+      "category": "vegetarian",
+      "dietary": "diabetes",
+      "ingredients": "Brown rice, seasonal vegetables, herbs",
+      "description": "A hearty bowl of vegetables and brown rice.",
+      "price": 14,
+      "available": true
+    }
+  ]
+}
