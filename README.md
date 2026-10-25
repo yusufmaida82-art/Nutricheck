@@ -1,40 +1,23 @@
-# Nutricheck
-#Maple Leaf Kitchen
-Project Description
-Maple Leaf Kitchen is a restaurant website that allows customers to browse meals, add items to a shopping cart, and contact the restaurant. The website provides an interactive experience using HTML, CSS, and JavaScript. This is a website designed to simplify and improve restaurant experience and improve the experience of customers.Maple leaf also keeps track on its customers medical condition by giving a dietary guidance system for customers.
+# NutriCheck — Maple Leaf Kitchen
 
-Problem Statement
-Many restaurant websites only display menus without allowing users to interact with them and the items on the menu are not giving dietary guidance hence some customers avoid restrants. This project demonstrates how JavaScript can be used to create a more engaging restaurant website with dynamic features.
+A small responsive restaurant menu with a JSON Server API.
 
-Features
-Responsive multi-page website
-Home, About, Menu and Contact pages
-Interactive shopping cart
-Add new menu items dynamically
-Contact form with validation
-Data persistence using LocalStorage
-Dynamic DOM manipulation
-Event-driven interactions
-Attractive and responsive design
-usage of open source Api
-Testing
-Using figma 
+## Run locally
 
-🛠 Technologies Used
-HTML
-CSS
-JavaScript
-Git
-API link
+1. Install Node.js, then run `npm install` once.
+2. In one terminal run `npm run api` to start the API at `http://localhost:3000`.
+3. In another terminal run `npm start` and open `http://localhost:8080/menu.html`.
+4. Run `npm test` for the JavaScript tests and coverage report.
 
-👥 Contributors
-Maida Yusuf
+Menu data is stored in `db.json`. JSON Server saves changes there while it runs locally.
 
-📌 Future Improvements
-Online payment integration
-User authentication
-Food search and filtering
-Order history
-Mpesa support
-Pay pal support and full Master Card support
-dietary guidance 
+## Deploy the API
+
+The included `render.yaml` describes a Render web service and persistent disk. Push this project to a Git repository, create a new Blueprint on Render from that repository, then wait for the `nutricheck-api` service to deploy. Its `/meals` route is the menu API.
+
+After deployment, copy the service URL into `api-config.js`, replacing `http://localhost:3000`, then redeploy the static site. The API URL should be the base URL only, without `/meals`.
+
+## JavaScript modules
+
+- `js/meals-api.js` handles validation and GET, POST, PUT, PATCH, and DELETE requests.
+- `js/menu.js` renders and filters meals, adds meals to the cart, and provides menu editing actions.

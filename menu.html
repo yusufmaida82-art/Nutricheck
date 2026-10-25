@@ -18,6 +18,7 @@
         </ul>
     </nav>
 </header>
+<main>
 <section class="menu-hero">
             <div class="container">
 
@@ -61,6 +62,8 @@
                     </div>
 
                 </div>
+
+                <p id="menu-status" class="status-message" role="status" aria-live="polite">Loading meals…</p>
 
 
                 <!-- Search Form -->
@@ -139,6 +142,35 @@
 
                 </div>
 
+                <section class="add-meal-section" aria-labelledby="add-meal-title">
+                    <h2 id="add-meal-title">Add a Meal</h2>
+                    <form id="add-meal-form" class="add-meal-form">
+                        <label>Meal name <input name="name" required minlength="2" maxlength="60"></label>
+                        <label>Category
+                            <select name="category" required>
+                                <option value="main">Main course</option>
+                                <option value="salad">Salad</option>
+                                <option value="vegetarian">Vegetarian</option>
+                                <option value="drinks">Drink</option>
+                            </select>
+                        </label>
+                        <label>Dietary concern
+                            <select name="dietary" required>
+                                <option value="none">None listed</option>
+                                <option value="gluten">Gluten awareness</option>
+                                <option value="allergens">Food allergens</option>
+                                <option value="diabetes">Diabetes awareness</option>
+                                <option value="kidney">Kidney health</option>
+                                <option value="vegetarian">Vegetarian</option>
+                            </select>
+                        </label>
+                        <label>Ingredients <input name="ingredients" required maxlength="200"></label>
+                        <label>Description <input name="description" maxlength="140"></label>
+                        <label>Price (KSh) <input name="price" type="number" min="1" step="0.01" required></label>
+                        <button type="submit">Save meal</button>
+                    </form>
+                </section>
+
 
                 <!-- Empty State -->
                 <div id="empty-state" class="empty-state" hidden>
@@ -167,7 +199,8 @@
                         If anything is unclear, contact the restaurant
                         before ordering.
                     </p>
-                
+                </div>
+            </div>
         </section>
 
     </main>
@@ -192,9 +225,7 @@
         </div>
     </footer>
 
-</body>
-</html>
-
-    
+<script src="api-config.js"></script>
+<script type="module" src="js/menu.js"></script>
 </body>
 </html>
